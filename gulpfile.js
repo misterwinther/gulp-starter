@@ -4,7 +4,7 @@
 
 var target = [];
 
-/*** TEHEM_NAME ***/
+/*** THEME_NAME ***/
 target.push({
   name : 'THEME_NAME',
   path : 'webroot/_/',
