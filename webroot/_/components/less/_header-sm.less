@@ -1,0 +1,17 @@
+@media (min-width: @screen-sm-min) {
+	header#site-header {
+		background: grey;
+	}
+
+	body.show-mobile-menu {
+		header#site-header {
+			position: absolute;
+		}
+	}
+	//When scrolling down
+	#page.scroll {
+		header#site-header {
+			background: darken(grey, 10%);		
+		}
+	}
+}

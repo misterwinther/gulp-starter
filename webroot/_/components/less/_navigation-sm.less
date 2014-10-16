@@ -1,0 +1,111 @@
+@media (min-width: @screen-sm-min) {
+    #nav-main {
+        .box-sizing(border-box);
+        height: auto; 
+        overflow: hidden; 
+        position: relative; 
+        width: 100%;
+        .logo {
+            float: left;
+            position: relative;
+            width: @logo-width-sm;
+            height: @logo-height-sm;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+            a {
+                max-width: 100%;
+                position: absolute;
+                top: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: url(../img/searangers_logo.png) no-repeat center center;
+                .background-size(@logo-width-sm @logo-height-sm);
+                transition: all 0.3s;
+            }
+        }
+
+        .toggle-menu {
+            display: none;
+        }
+
+        #site-nav {
+            display: inherit;
+            float: right;
+            clear: none;
+            ul { 
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    float: left;
+                    display: inline-block;
+                    height: 80px;
+                    margin-left: 25px;
+                    &:first-child{margin-left: 0;}
+                    a {
+                        display: block;
+                        font-family: @font-family-headline;
+                        text-transform: uppercase;
+                        color: @searangers-white;
+                        text-decoration: none;
+                        line-height: 80px;
+                        border: 0;
+                        font-size: @font-size-normal;
+                        vertical-align: middle;
+                        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+                        &:hover, &.active {
+                            text-decoration: none;
+                            color: @searangers-white;
+                            border-bottom: 2px solid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    body.show-mobile-menu {
+        #nav-main {
+            #site-nav {display: block; height: 100%;}
+            .toggle-menu {
+                .burger {display: block;}
+                .icon-close {display: block;}
+            }
+        }
+    } 
+    
+    //When scrolling down
+    #page.scroll {
+        #nav-main { padding: 0;
+            .logo {
+                width: @logo-width;
+                height: @logo-height;
+                margin-bottom: 0;
+                margin-top: 5px;
+                transition: all 0.3s;
+                a {
+                    transition: all 0.3s;
+                    .background-size(@logo-width @logo-height);
+                }
+            }
+            #site-nav {
+                ul { 
+                    li {
+                        height: 50px;
+                        &:first-child{margin-left: 0;}
+                        a {
+                            color: @searangers-dark-gray;
+                            line-height: 50px;
+                            text-shadow: none;
+                            &:hover, &.active {
+                                border: none;
+                                color: @searangers-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}

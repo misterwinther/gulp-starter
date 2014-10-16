@@ -1,0 +1,49 @@
+@media screen {
+    .container {.transition-duration(.15s);}
+    #page {position: relative;}
+    html, body {width: 100%; height: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; transition: all 0.6s;}
+    body {background: #ffffff; .box-sizing(border-box); margin: 0; padding: 0; font: @font-size-base-mobile/@line-height-base @font-family-base; color: @searangers-dark-gray; max-width: 100%; overflow-x: hidden;}
+    h1 {font-family: @font-family-headline; font-size: @font-size-headline; color: @searangers-dark-gray; margin: 30px 0 20px; text-indent: -2px;}
+    h2 {font-family: @font-family-headline; font-size: 18px; letter-spacing: -1px; }
+    h3 {font-family: @font-family-headline; font-size: 16px; letter-spacing: -1px;}
+    h4 {font-weight: bold;}
+    em, i {font-family: @font-family-base; font-style: italic;}
+    img {max-width: 100% !important; height: auto;}
+    
+    a, input, button {
+        outline: 0 !important;
+        &::-moz-focus-inner {
+            border: 0 !important;
+        }
+    }
+    .print-only {display: none;}
+    .screen-only {display: block;}
+   
+    // Overlay
+    #ncOverlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:3300;background:rgba(0,0,0,0.5);display:none;cursor:pointer;}
+    #ncOverlay-content{position:absolute;top:0;right:0;bottom:0;left:0;width:70%;height:50%;margin:auto;z-index:3301;display:none;}
+    .ncOverlay-inner{background:@searangers-white;overflow:hidden;padding:1%;}
+    .ncOverlay-inner-scroll{overflow-y:auto;}
+    .ncOverlay-close{
+        cursor:pointer;
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 36px;
+        span {
+            max-width: 100%;
+            position: absolute;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url(../img/icon-close-edo.png) no-repeat center center;
+            .background-size(30px 36px;);
+        }
+    }
+
+    // import media queries - ALWAYS AT BOTTOM
+    @import "_base-sm";
+    @import "_base-md";
+    @import "_base-lg";
+}
