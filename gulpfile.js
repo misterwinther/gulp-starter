@@ -4,10 +4,10 @@
 
 var target = [];
 
-/*** THEME_NAME ***/
+/*** venma.dk ***/
 target.push({
-  name : 'THEME_NAME',
-  path : 'webroot/_/',
+  name : 'venma.dk',
+  path : 'webroot/wp-content/themes/venma/_/',
   less : {
     // all less files to watch (all = 'less/**/*.less')
     watch : ['components/less/**/*.less', 'bower_components/**/*.less'],
@@ -24,10 +24,15 @@ target.push({
     // all js files that should not be concatinated
     uglify_src : ['components/js/html5shiv.js','components/js/respond.js'],
     // all js files that should be concatinated
-
     concat_src : [
-      'components/js/viewport-fix.js',
-      'components/js/master.js'
+    	'bower_components/jquery/dist/jquery.min.js',
+		'components/libs/flexslider/jquery.flexslider.js',
+		'components/libs/jquery-cookie/jquery.cookie.js',
+		'components/libs/novicell/novicell.overlay.js',
+		'bower_components/bootstrap/js/transition.js',
+		'bower_components/bootstrap/js/collapse.js',
+      	'components/js/viewport-fix.js',
+      	'components/js/master.js'
     ],
     concat_file : 'master.min.js',
 
@@ -40,8 +45,8 @@ target.push({
 });
 
 target.push({
-  name : 'DFC theme php files',
-  path : 'webroot/',
+  name : 'theme php files',
+  path : 'webroot/wp-content/themes/venma/',
   
   livereload : {
   	watch : ['**/*.php'],

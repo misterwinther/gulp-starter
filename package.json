@@ -1,5 +1,5 @@
 {
-  "name": "danishfoodcluster",
+  "name": "venma.dk",
   "author": "Novicell",
   "version": "0.1.0",
   "main": ["gulpfile.js"],
@@ -12,7 +12,7 @@
     "gulp-uglify": "~0.2.0",
     "gulp-jshint": "~1.8.4",
     "gulp-concat": "~2.1.7",
-    "gulp-notify": "~0.4.0",
+    "gulp-notify": "~2.0.0",
     "jshint-stylish": "~0.1.5",
     "browser-sync": "~0.5.3",
     "gulp-rename": "~0.2.2",
