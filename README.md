@@ -9,7 +9,7 @@ The "webroot" folder is for your actual website to run from.
 	Re-naming
 </h3>
 <p>
-	Remember to rename your gulpfile.js "THEME_NAME" + path
+	Remember to open the gulpfile.js and properly name the "THEME_NAME" + the right path
 </p>
 <h4>
 	Get startet
