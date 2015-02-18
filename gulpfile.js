@@ -25,10 +25,7 @@ target.push({
     uglify_src : ['components/js/html5shiv.js','components/js/respond.js'],
     // all js files that should be concatinated
     concat_src : [
-    	'bower_components/jquery/dist/jquery.min.js',
-		'components/libs/flexslider/jquery.flexslider.js',
-		'components/libs/jquery-cookie/jquery.cookie.js',
-		'components/libs/novicell/novicell.overlay.js',
+    	'bower_components/jquery/dist/jquery.js',
 		'bower_components/bootstrap/js/transition.js',
 		'bower_components/bootstrap/js/collapse.js',
       	'components/js/viewport-fix.js',

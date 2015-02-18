@@ -1,0 +1,18 @@
+//===================== //
+// SITE HEADER
+//===================== //
+#site-header {background: #fff; padding: 10px 0; .transition;
+	.logo {display: inline-block; line-height: 60px; height: 60px; float: left;
+		a { display: table-cell; line-height: 60px;
+			span {margin: 0; font-family: @base-header-font; text-transform: uppercase; color: @dark-grey; font-size: 26px; font-weight: 600; vertical-align: middle;}
+			em {color: @semi-grey; font-size: 12px; vertical-align: middle;}
+			&:hover{*{color: @brick-yellow;}}
+		}
+	}
+	.toggle-menu {float: right; border: none; background: none; outline: none; font-family: @base-header-font; text-transform: uppercase; position: relative; padding: 0 0 0 72px; width: auto; height: 60px;
+		&:hover {color: @dark-grey;
+			&:before {color: @brick-yellow;}
+		}
+		&:before {content: "\2630"; font-size: 20px; width: 60px; height: 60px; border: 2px solid; line-height: 60px; border-radius: 50%; position: absolute; left: 0; top: 0; font-family: 'fontello';}
+	}
+}
