@@ -1,13 +1,13 @@
 gulp-starter
 ============
 
-Boilerplate for starting a new gulp project
+Boilerplate for starting a new gulp project - This setup is with Bootstrap 3.0
 
 <h3>
 	Re-naming
 </h3>
 <p>
-	Remember to rename your gulpfile.js "THEME_NAME" 
+	Remember to rename your gulpfile.js "THEME_NAME" + path
 </p>
 <h4>
 	Get startet
