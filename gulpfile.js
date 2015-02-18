@@ -40,7 +40,7 @@ target.push({
 });
 
 target.push({
-  name : 'DFC theme php files',
+  name : 'php files',
   path : 'webroot/',
   
   livereload : {

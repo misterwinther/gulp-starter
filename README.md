@@ -7,13 +7,13 @@ Boilerplate for starting a new gulp project
 	Re-naming
 </h3>
 <p>
-	Remember to rename your gulpfile.js "THEME_NAME" + the path to theme (if you create WP theme).
+	Remember to rename your gulpfile.js "THEME_NAME" 
 </p>
 <h4>
 	Get startet
 </h4>
 <p>
-	Initially you gotta run: <pre>suno npm install</pre>
+	Initially you gotta run: <pre>sudo npm install</pre>
 </p>
 <p>
 	Then run <pre>gulp</pre>
